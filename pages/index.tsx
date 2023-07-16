@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -24,55 +25,31 @@ const Home: NextPage = () => {
               </p>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <svg
-                    className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
+                  <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2">
                     <circle cx="12" cy="12" r="11" />
                     <path
                       d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
                       fill="none"
                     />
                   </svg>
-                  <a
-                    href="pages/auth/login
-                  "
-                  >
-                    <p className="ml-4">
-                      Customizing your
-                      <code className="text-sm font-bold text-gray-900">
-                        tailwind.config.js
-                      </code>{" "}
-                      file
-                    </p>
-                  </a>
+                  <Link className="h-6 ml-4" href="auth/login">
+                    Let me link to the Login Page.
+                  </Link>
                 </li>
                 <li className="flex items-center">
-                  <svg
-                    className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
+                  <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2">
                     <circle cx="12" cy="12" r="11" />
                     <path
                       d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
                       fill="none"
                     />
                   </svg>
-                  <p className="ml-4">
-                    Extracting classNamees with
-                    <code className="text-sm font-bold text-gray-900">
-                      @apply
-                    </code>
-                  </p>
+                  <Link className="h-6 ml-4" href="threejs/three-test">
+                    Let me link to the threeJs Page.
+                  </Link>
                 </li>
                 <li className="flex items-center">
-                  <svg
-                    className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
+                  <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2">
                     <circle cx="12" cy="12" r="11" />
                     <path
                       d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
